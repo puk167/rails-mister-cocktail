@@ -17,9 +17,28 @@ Cocktail.delete_all
 
 puts 'create Cocktail...'
 
-20.times do
-  Cocktail.create(name: Faker::Beer.name)
-end
+# 20.times do
+#   Cocktail.create(name: Faker::Beer.name)
+# end
+
+url = "http://res.cloudinary.com/ihacker/image/upload/v1523002519/p8pv6esr7bmeh96ibblv.jpg"
+Cocktail.create(name: 'Mojito', remote_photo_url: url)
+
+url = "http://res.cloudinary.com/ihacker/image/upload/v1523002533/jgsle8gkuuzfotcoig1t.jpg"
+Cocktail.create(name: 'Gin Tonic', remote_photo_url: url)
+
+url = "http://res.cloudinary.com/ihacker/image/upload/v1523002532/meqtuemtithij1zya01e.jpg"
+Cocktail.create(name: 'Coquetier', remote_photo_url: url)
+
+url = "http://res.cloudinary.com/ihacker/image/upload/v1523002498/fuui6atzgbhp1j1jm5oi.jpg"
+Cocktail.create(name: 'Gunpowder plot', remote_photo_url: url)
+
+url = "http://res.cloudinary.com/ihacker/image/upload/v1523002479/wfivyn24ey5jx4mmfceo.jpg"
+Cocktail.create(name: 'The crapper', remote_photo_url: url)
+
+url = "http://res.cloudinary.com/ihacker/image/upload/v1523002464/ay4bchrtglu006awyqg5.jpg"
+Cocktail.create(name: 'Diamonds are forever', remote_photo_url: url)
+
 
 puts 'finished Cocktail'
 
@@ -38,5 +57,9 @@ end
 end
 
 puts 'finished Ingredient'
+
+
+
+
 
 
