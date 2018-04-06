@@ -13,7 +13,7 @@
   </ul>
     <p style="text-align: center">
     <%= link_to "Add a dose", new_cocktail_dose_path(@cocktail), class: "btn btn-danger" %></p>
-    <p style="text-align: center"><%= link_to "Go Back", cocktails_path, class: "btn btn-danger" %></p>
+    <p style="text-align: center" ><%= link_to "Delete Cocktail", cocktail_path(@cocktail), class: "btn btn-danger",method: :delete, data: { confirm: "Delete it, really?"} %></p>
 </div>
 
 
