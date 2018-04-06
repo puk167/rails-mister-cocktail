@@ -23,7 +23,11 @@ gem 'webpacker'
 
 gem 'faker'
 
-gem 'figaro'
+gem 'figaro' # to protect secret data in config/application.yml
+gem 'carrierwave'
+gem 'cloudinary'
+
+
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3'
