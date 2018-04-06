@@ -1,6 +1,11 @@
-<h1>Create new</h1>
-<%= form_for(@cocktail) do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.submit %>
-<% end %>
+<div class="container" style="margin-top: 150px;">
+  <div class="row">
+    <div class="col col-sm-4 col-sm-offset-4">
+      <h1>Input new cocktail</h1>
+        <%= simple_form_for(@cocktail) do |f| %>
+          <%= f.input :name, label: "New cocktail:" %>
+          <%= f.submit "Submit!", class: "btn btn-success" %>
+      <% end %>
+    </div>
+  </div>
+</div>
