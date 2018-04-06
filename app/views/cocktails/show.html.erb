@@ -1,3 +1,23 @@
-<h1><%= @cocktail.name %></h1>
-<p>Placeholder</p>
-<%= link_to "Back", cocktails_path  %>
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://source.unsplash.com/1600x900/?cocktail'); height: 60vh;">
+  <div class="banner-content">
+    <h1 style="text-align: center; font-family: open-sans; color: white; padding: 200px;"><%= @cocktail.name %></h1>
+  </div>
+</div>
+
+<div style="text-align: center">
+  <ul>
+    <% @cocktail.doses.each do |dose| %>
+      <li><%= dose.description %> (<%= dose.ingredient.name %>)</li>
+    <% end %>
+  </ul>
+</div>
+
+<div>
+  <p style="text-align: center">
+    <%= link_to "Add a dose", new_cocktail_dose_path(@cocktail), class: "btn btn-danger" %></p>
+    <p style="text-align: center"><%= link_to "Go Back", cocktails_path, class: "btn btn-danger" %></p>
+</div>
+
+
+
+
