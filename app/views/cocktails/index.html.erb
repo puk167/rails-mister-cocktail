@@ -4,7 +4,8 @@
     <% @cocktails.each do |cocktail| %>
       <div class="col-xs-12 col-sm-6">
         <%= link_to cocktail_path(cocktail) do%>
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://picsum.photos/4/400/?random');">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('');">
+          <%= cl_image_tag cocktail.photo, height: 400, width: 400, crop: :fill %>
         <div class="card-description">
           <h5><%= cocktail.name %></h5>
           <!-- <p>Very cool city, the best</p> -->
@@ -15,4 +16,5 @@
     <% end %>
   </div>
 </div>
+
 

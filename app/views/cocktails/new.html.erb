@@ -1,9 +1,12 @@
 <div class="container", style="height: 620px;">
   <div class="row">
     <div class="col col-sm-4 col-sm-offset-4">
-      <h1>Input new cocktail</h1>
+      <h3>Input new cocktail</h3>
         <%= simple_form_for(@cocktail) do |f| %>
           <%= f.input :name, label: "New cocktail:" %>
+          <%= f.input :photo, label: "Upload a photo"%>
+          <%= f.input :photo_cache, as: :hidden %>
+
           <%= f.submit "Submit!", class: "btn btn-success" %>
       <% end %>
     </div>
