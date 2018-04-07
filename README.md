@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+finally it works on heroku
+https://ck-fxxx.herokuapp.com/
 
-Things you may want to cover:
+I made two changes
 
-* Ruby version
+# add cloudinary API key to heroku
+- heroku config:add CLOUDINARY_URL="****"
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- modify _navbar.html.erb, use image from cloudinary not file in assets/images
