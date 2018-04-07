@@ -221,7 +221,7 @@ DEPENDENCIES
   autoprefixer-rails
   bootstrap-sass (~> 3.3)
   byebug
-  carrierwave
+  carrierwave (~> 1.2)
   cloudinary
   coffee-rails (~> 4.2)
   faker

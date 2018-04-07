@@ -24,7 +24,7 @@ gem 'webpacker'
 gem 'faker'
 
 gem 'figaro' # to protect secret data in config/application.yml
-gem 'carrierwave'
+gem 'carrierwave', '~> 1.2' # a gem to upload files associated to Models
 gem 'cloudinary'
 
 
